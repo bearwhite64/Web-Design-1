@@ -1,0 +1,300 @@
+* {
+  font-family: "Itim", cursive;
+  /* overflow: hidden; */
+  overflow-x: hidden;
+}
+
+/* body {
+  overflow: hidden;
+} */
+
+.navbar-brand {
+  font-size: 1.2rem;
+  color: rgb(143, 140, 140);
+  text-decoration: none;
+}
+
+.navbar-nav a {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  text-shadow: rgb(238, 168, 103) 0.01em 0.01em 0.01em;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-contact {
+  border: 1px solid gray;
+}
+
+.header {
+  min-height: 900px;
+  position: relative;
+  background-image: url(Content/main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*repeat: no-repeat ไม่ให้มีภาพซ้อน*/
+  text-align: center;
+  color: white;
+  background-attachment: fixed;
+  /*attachment: fixed กำหนดให้ภาพไม่เคลื่อนย้ายอยู่นิ่งๆ */
+}
+
+.head {
+  font-style: bold;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  overflow-y: hidden;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#headerh1 {
+  font-size: 60px;
+  font-style: bold;
+  text-shadow: black 0.1em 0.1em 0.1em;
+}
+
+#headerp1 {
+  font-size: 30px;
+  font-style: bold;
+  text-shadow: black 0.1em 0.1em 0.1em;
+}
+
+#service {
+  background-color: rgb(34, 34, 34);
+  color: aliceblue;
+  margin: auto;
+}
+
+.col-md-6 {
+  text-align: justify;
+}
+
+.col-md-6 div {
+  padding: 0 100px;
+}
+
+.col-md-6 h2 {
+  color: bisque;
+  text-align: bold;
+  font-size: 60px;
+  text-shadow: rgb(197, 188, 188) 0.1em 0.1em 0.09em;
+}
+
+.col-md-6 p1 {
+  color: rgb(176, 141, 97);
+  font-size: 25px;
+}
+
+.col-md-6 p2 {
+  color: rgb(216, 195, 169);
+}
+
+.col-md-6 li {
+  color: rgb(216, 195, 169);
+}
+
+.col-md-6 h5 {
+  color: rgb(99, 92, 83);
+}
+
+.row-service {
+  border: 1px solid rgb(158, 139, 70);
+  align-items: center;
+  padding: 40px;
+  margin: auto;
+}
+
+.row-service h4 {
+  font-style: bold;
+  text-shadow: rgb(197, 188, 188) 0.1em 0.1em 0.7em;
+  padding: 20px;
+}
+
+/* content */
+
+a.btn {
+  font-size: 17px;
+  margin: 20px;
+  padding: 10px 60px 10px 60px;
+}
+
+.content {
+  background-color: rgb(34, 34, 34);
+  color: white;
+  text-align: center;
+}
+
+.row-photo {
+  position: relative;
+  width: 100%;
+  top: 100%;
+  left: 42.5%;
+  transform: translate(-25%);
+}
+
+.content img {
+  padding: 50px 50px 0 50px;
+  width: 100%;
+}
+
+button.btn {
+  font-size: 20px;
+  margin: 5% 0 0;
+  padding: 10px 60px 10px 60px;
+}
+
+/* footer */
+
+footer {
+  background-color: rgb(34, 34, 34);
+  color: antiquewhite;
+  font-size: x-large;
+  padding: 10% 40px 60px 40px;
+}
+
+.col-md-4 {
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* กำหนดให้รูปมีเส้นขอบและขยายรูปใช้ระยะเวลา 0.8S */
+
+.col-lg-4 img {
+  padding: 0.5%;
+  width: 100%;
+  height: 100%;
+  border-radius: 35%;
+  object-fit: cover;
+  opacity: 0.1;
+  transition: transform 0.8s;
+  overflow-y: hidden;
+}
+
+/* เอ็ฟเฟค ขยายออก Scale 1.2 และ มีสี */
+
+.col-lg-4 img:hover {
+  opacity: 2;
+  transform: scale(1);
+  border: 5px solid rgb(84, 85, 17);
+  overflow-y: hidden;
+}
+
+.col-md-4-contact1 {
+  position: relative;
+  padding: 60px;
+  left: 10%;
+  transform: translate(-10%);
+  text-align: center;
+  text-shadow: rgb(128, 127, 127) 0.1em 0.1em 0.1em;
+}
+
+.col-md-4-contact1 h3 {
+  font-size: 80px;
+}
+
+.col-md-4-contact2 {
+  position: relative;
+}
+
+/* .col-md-4-contact3 {
+  position: relative;
+  top: 20%;
+  left: 10%;
+}
+ */
+
+/* Style all font awesome icons */
+
+/* .fa {
+  margin: 20px;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+} */
+
+#fixedsocial {
+  top: 90%;
+  left: 2%;
+  height: 200px;
+  width: 60px;
+  position: fixed;
+}
+
+.facebookflat {
+  background: url(FB1.png);
+  height: 50px;
+  width: 50px;
+  transition: ease 500ms;
+  background-size: 50px;
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.facebookflat:hover {
+  background: url(FB2.png);
+  height: 50px;
+  width: 50px;
+  background-size: 60px;
+  opacity: 0.5;
+  transition: ease 500ms;
+  border-radius: 5%;
+}
+
+/* back-top */
+
+#btt {
+  padding: 1rem 1.5rem;
+  border: none;
+  background-color: antiquewhite;
+  color: black;
+  position: fixed;
+  right: 2.5rem;
+  bottom: 3rem;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+}
+
+#btt a {
+  position: fixed;
+  text-decoration: none;
+  font-size: 60px;
+  color: black;
+  bottom: 2.1rem;
+  right: 3.3rem;
+}
+
+button#btt {
+  background: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 30px;
+  color: black;
+  border: 3px solid rgb(158, 139, 70);
+}
