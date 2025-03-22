@@ -1,0 +1,343 @@
+*{
+    margin-top: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+
+html{
+    
+}
+
+.navbar-nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.carousel-item{
+    height: 500px;
+    background-color: black;
+}
+
+.carousel-image-1{
+    background-image: url(image/wall.png);
+    background-size: cover;
+    
+
+}
+
+.carousel-image-2{
+    background-image: url(image/wall02.png);
+    background-size: cover;
+    position: absolute;
+    opacity: 50%;
+
+}
+
+.carousel-image-3{
+    background-image: url(image/wall03.png);
+    background-size: cover;
+    position: absolute;
+    opacity: 50%;
+
+}
+
+
+.box{
+    margin-bottom: 17px;
+}
+
+h1, h5,h4,.about-text{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+.container1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+.container1 .cardbox{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    color: white;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+    transition: 0.5;
+}
+
+.container1 .cardbox:hover{
+    transform: translateY(-20px);
+}
+.container1 .cardbox::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+}
+
+.container1 .cardbox::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+    filter: blur(38px);
+}
+
+.container1 .cardbox:nth-child(2)::before,
+.container1 .cardbox:nth-child(2)::after
+{
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+
+}
+
+.container1 .cardbox:nth-child(3)::before,
+.container1 .cardbox:nth-child(3)::after
+{
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.container1 .cardbox span{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgba(0,0,0,0.6);
+}
+
+.container1 .cardbox span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+    pointer-events: none;
+}
+.container1 .cardbox .content{
+    position: relative;
+    z-index: 10;
+    padding: 20px 40px;
+
+}   
+
+.container1 .cardbox .content p {
+    line-height: 1.3rem;
+}
+
+.button_slide {
+    color: #FFF;
+    border: 2px solid rgb(240, 240, 240);
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 rgb(0, 255, 56);
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+  }
+  
+  .slide_down:hover {
+    box-shadow: inset 0 100px 0 0 rgb(0, 231, 0);
+  }
+  
+  .slide_right:hover {
+    box-shadow: inset 400px 0 0 0 rgb(0, 231, 0);
+  }
+  
+  .slide_left:hover {
+    box-shadow: inset 0 0 0 50px rgb(0, 231, 0);
+  }
+  
+  .slide_diagonal:hover {
+    box-shadow: inset 400px 50px 0 0 rgb(0, 231, 0);
+  }
+  
+  #outer {
+    width: 364px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+  }
+
+.contentone{
+    position: relative;
+    margin-top: 5%;
+    width: 550px;
+}
+
+.border-min-hight{
+    background-color: #00d0ff;
+    width: 1200px;
+}
+
+.test {
+    position: relative;
+
+}
+
+.po-01{
+    margin-right: 80px;
+    margin-top: 60px;
+}
+.po-02{
+    margin-left: 80px;
+    margin-top: 50px;
+}
+.po-03{
+    margin-top: 50px;
+    margin-right: 140px;
+}
+
+.progress{
+    width: 570px;
+    margin-right: 76px;
+    margin-bottom: 10px;
+}
+
+.line {
+    border-right: 2px solid cornflowerblue;
+    padding-right: 0.8rem;        
+}
+
+.line2 {
+    border-left: 2px solid cornflowerblue;
+    padding-left: 1.2rem;        
+}
+
+
+.gallery {
+    margin-top: 48px;
+    margin-left: 148px;
+    --g: 8px;   /* the gap */
+    --s: 400px; /* the size */
+    
+    display: grid;
+    border-radius: 50%;
+  }
+  .gallery > img {
+    grid-area: 1/1;
+    width: 380px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: translate(var(--_x,0),var(--_y,0));
+    cursor: pointer;
+    z-index: 0;
+    transition: .3s, z-index 0s .3s;
+  }
+  .gallery img:hover {
+    --_i: 1;
+    z-index: 1;
+    transition: transform .2s, clip-path .3s .2s, z-index 0s;
+  }
+  .gallery:hover img {
+    transform: translate(0,0);
+  }
+  .gallery > img:nth-child(1) {
+    clip-path: polygon(50% 50%,calc(50%*var(--_i,0)) calc(120%*var(--_i,0)),0 calc(100%*var(--_i,0)),0 0,100% 0,100% calc(100%*var(--_i,0)),calc(100% - 50%*var(--_i,0)) calc(120%*var(--_i,0)));
+    --_y: calc(-1*var(--g))
+  }
+  .gallery > img:nth-child(2) {
+    clip-path: polygon(50% 50%,calc(100% - 120%*var(--_i,0)) calc(50%*var(--_i,0)),calc(100% - 100%*var(--_i,0)) 0,100% 0,100% 100%,calc(100% - 100%*var(--_i,0)) 100%,calc(100% - 120%*var(--_i,0)) calc(100% - 50%*var(--_i,0)));
+    --_x: var(--g)
+  }
+  .gallery > img:nth-child(3) {
+    clip-path: polygon(50% 50%,calc(100% - 50%*var(--_i,0)) calc(100% - 120%*var(--_i,0)),100% calc(100% - 120%*var(--_i,0)),100% 100%,0 100%,0 calc(100% - 100%*var(--_i,0)),calc(50%*var(--_i,0)) calc(100% - 120%*var(--_i,0)));
+    --_y: var(--g)
+  }
+  .gallery > img:nth-child(4) {
+    clip-path: polygon(50% 50%,calc(120%*var(--_i,0)) calc(50%*var(--_i,0)),calc(100%*var(--_i,0)) 0,0 0,0 100%,calc(100%*var(--_i,0)) 100%,calc(120%*var(--_i,0)) calc(100% - 50%*var(--_i,0)));
+    --_x: calc(-1*var(--g))
+  }
+  
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    background-color: #111;
+    opacity: 100%;
+
+  }
+
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+/* Dropup Button */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 12px;
+    font-size: 14px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropup content */
+  .dropup {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropup content (Hidden by Default) */
+  .dropup-content {
+    padding: 20px;
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    background-color: #323232;
+    min-width: 360px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropup */
+  .dropup-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropup links on hover */
+  .dropup-content a:hover {background-color: #ddd}
+  
+  /* Show the dropup menu on hover */
+  .dropup:hover .dropup-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropup button when the dropup content is shown */
+  .dropup:hover .dropbtn {
+    background-color: #2980B9;
+  }
+
+  .btn-nawa{
+    color: white;
+    text-decoration: none;
+  }

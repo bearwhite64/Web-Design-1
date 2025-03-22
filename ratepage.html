@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ราคาบริษัทนำเที่ยว</title>
+  <!-- Add Bootstrap CSS link -->
+  <link rel="icon" href="image/ict308 (2000 × 2000 px) (2000 × 1700 px) (2000 × 1500 px).png">
+  <link rel="stylesheet" href="dark_textstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+</head>
+
+<body class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <nav class="navbar border-bottom fixed-top navbar-expand-lg navbar-light bg-light">
+        <!-- Container wrapper -->
+        <div class="container">
+          <!-- Navbar brand -->
+          <a class="navbar-brand me-2" href="#top">
+            <img
+              src="image/ict308 (2000 × 2000 px) (2000 × 1700 px) (2000 × 1500 px).png"
+              height="38"
+              alt="MDB Logo"
+              loading="lazy"
+              style="margin-top: -1px;"
+            />
+          </a>
+      
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarButtonsExample"
+            aria-controls="navbarButtonsExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+      
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarButtonsExample">
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " href="project.html"><i class="fa fa-fw fa-home"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="project.html #aboutus"><i class="fa fa-fw fa-check"></i>About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="project.html #boxseller"><i class="fa fa-fw fa-shopping-cart"></i>Buy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="project.html #contact"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center">
+                <button type="button" class="btn btn-primary me-3">
+                  <a class="btn-nawa" href="register.html">Sign up</a>
+                </button>
+              </div>
+      
+              <a
+                class="btn btn-dark px-3"
+                href="project.html"
+                role="button"
+                ><i class="fa fa-fw fa-star"></i
+              ></a>
+            </div>
+          </div>
+          <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">ราคาบริษัทนำเที่ยว</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <table class="table table-bordered text-center">
+          <thead>
+            <tr>
+              <th scope="col">จำนวนวัน</th>
+              <th scope="col">ราคา (เหรียญ)</th>
+              <th scope="col">เลือก</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1 วัน</td>
+              <td>50</td>
+              <td><input type="checkbox" name="service[]" value="50" onclick="calculateTotal()"></td>
+            </tr>
+            <tr>
+              <td>3 วัน</td>
+              <td>150</td>
+              <td><input type="checkbox" name="service[]" value="150" onclick="calculateTotal()"></td>
+            </tr>
+            <tr>
+              <td>7 วัน</td>
+              <td>350</td>
+              <td><input type="checkbox" name="service[]" value="350" onclick="calculateTotal()"></td>
+            </tr>
+            <tr>
+              <td>1 เดือน</td>
+              <td>1,500</td>
+              <td><input type="checkbox" name="service[]" value="1500" onclick="calculateTotal()"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <p class="text-center">เพิ่มค่าบริการเพิ่มเติม:</p>
+        <table class="table table-bordered text-center">
+          <thead>
+            <tr>
+              <th scope="col">ชื่อบริการ</th>
+              <th scope="col">ราคา (เหรียญ)</th>
+              <th scope="col">เลือก</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ช่างถ่ายรูป</td>
+              <td>75</td>
+              <td><input type="checkbox" name="service[]" value="75" onclick="calculateTotal()"></td>
+            </tr>
+            <tr>
+              <td>ช่างตกแต่งรูป</td>
+              <td>42</td>
+              <td><input type="checkbox" name="service[]" value="42" onclick="calculateTotal()"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row justify-content-center text-center">
+        <div class="col-md-6">
+          <button class="btn btn-primary" onclick="validateAndShowConfirmation()">ยืนยัน</button>
+        </div>
+        </div>
+    <div class="row justify-content-center mt-4">
+      <div class="col-md-6">
+        <p class="text-center" id="totalPrice">ราคารวม: 0 เหรียญ</p>
+        <p class="text-center" id="discount">ส่วนลด: 0 เหรียญ</p>
+        <p class="text-center" id="remaining">ขาดอีก: 0 เหรียญถึงโปรโมชั่น</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Bootstrap Modal -->
+<div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel"
+aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="confirmationModalLabel">ยืนยันการทำรายการ</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <p id="modalMessage"></p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
+      <button type="button" class="btn btn-primary" onclick="confirmTransaction()">ตกลง</button>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+  <!-- Add Bootstrap JS and jQuery link -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+  <script>
+    function calculateTotal() {
+      var totalCoins = 0;
+      var selectedServices = document.getElementsByName("service[]");
+      for (var i = 0; i < selectedServices.length; i++) {
+        if (selectedServices[i].checked) {
+          totalCoins += parseInt(selectedServices[i].value);
+        }
+      }
+
+      var discount = 0;
+      if (totalCoins >= 300) {
+        discount = Math.round(totalCoins * 0.2);
+      }
+
+      var remainingCoins = 300 - totalCoins;
+      var totalPrice = totalCoins - discount;
+
+      document.getElementById("totalPrice").innerText = "ราคารวม: " + totalPrice + " เหรียญ";
+      document.getElementById("discount").innerText = "ส่วนลด: " + discount + " เหรียญ";
+      
+      if (totalCoins < 300) {
+        document.getElementById("remaining").innerText = "ขาดอีก: " + remainingCoins + " เหรียญถึงโปรโมชั่น";
+      } else {
+        document.getElementById("remaining").innerText = "คุณได้รับ โปรโมชั่น 20% ถูกใจคุณ!";
+      }
+    }
+  </script>
+  
+
+<script>
+    function validateAndShowConfirmation() {
+      var totalCoins = 0;
+      var selectedServices = document.getElementsByName("service[]");
+      for (var i = 0; i < selectedServices.length; i++) {
+        if (selectedServices[i].checked) {
+          totalCoins += parseInt(selectedServices[i].value);
+        }
+      }
+  
+      if (totalCoins < 42) {
+        alert("คุณยังไม่ได้เลือกรายการ");
+      } else {
+        showConfirmation(totalCoins);
+      }
+    }
+  
+    function showConfirmation(totalCoins) {
+      var discount = 0;
+      if (totalCoins >= 300) {
+        discount = Math.round(totalCoins * 0.2);
+      }
+  
+      var remainingCoins = 300 - totalCoins;
+      var totalPrice = totalCoins - discount;
+  
+      var modalMessage = document.getElementById("modalMessage");
+      if (totalCoins < 300) {
+        modalMessage.innerText = "คุณแน่ใจที่จะยืนยันการทำรายการหรือไม่?\n" +
+          "ราคารวม: " + totalPrice + " เหรียญ\n" +
+          "ส่วนลด: " + discount + " เหรียญ\n" +
+          "ขาดอีก: " + remainingCoins + " เหรียญถึงโปรโมชั่น";
+      } else {
+        modalMessage.innerText = "คุณได้รับ โปรโมชั่น 20% ถูกใจคุณ!\n" +
+          "ราคารวม: " + totalPrice + " เหรียญ\n" +
+          "ส่วนลด: " + discount + " เหรียญ";
+      }
+  
+      var confirmationModal = new bootstrap.Modal(document.getElementById('confirmationModal'));
+      confirmationModal.show();
+    }
+  
+    function confirmTransaction() {
+      // Process the transaction here (e.g., redirect to "thank.html" page)
+      window.location.href = "thank.html";
+    }
+  </script>
+
+
+</body>
+
+</html>

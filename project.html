@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project ict308</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="image/ict308 (2000 × 2000 px) (2000 × 1700 px) (2000 × 1500 px).png">
+
+
+    </head>
+    <body>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content bg-danger">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">ยืนยัน</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-warning">
+                    <div class="text-center ">
+                        <picture>
+                            <img src="image/01.png" class="img-fluid img-thumbnail box text-center" width="150px" height="150px">
+                          </picture>
+
+                    </div>
+                    <p>เนื่องจากมีคะแนนการบริการที่สูงถึง 4.9 ดาว ฉัน, Nawa, คือชายที่มีความคิดสร้างสรรค์ในการนำเที่ยวคุณไปเส้นทางที่น่าตื่นเต้นและน่าสนุกเพื่อให้คุณมีประสบการณ์ที่หลากหลายและน่าจดจำ
+                        ด้วยความที่รับจ้างวันละ 50 เหรียญ คุณจะได้รับการดูแลและบริการที่เป็นอย่างดี และความเอาใจใส่ในทุกๆ รายละเอียดของการเดินทาง ฉันจะนำคุณไปสำรวจสถานที่ท่องเที่ยวที่น่าสนใจ สวนสนุกที่สนุกสนาน หรือแพลนเพื่อชมวิวที่สวยงาม
+                        </p>
+                    <h5>ท่านต้องการจ้างไกด์นำเที่ยวในราคา 50$ ?</h5>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
+                  <a href="ratepage.html" class="btn btn-success">50$</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <nav class="navbar border-bottom fixed-top navbar-expand-lg navbar-light bg-light">
+            <!-- Container wrapper -->
+            <div class="container">
+              <!-- Navbar brand -->
+              <a class="navbar-brand me-2" href="#top">
+                <img
+                  src="image/ict308 (2000 × 2000 px) (2000 × 1700 px) (2000 × 1500 px).png"
+                  height="38"
+                  alt="MDB Logo"
+                  loading="lazy"
+                  style="margin-top: -1px;"
+                />
+              </a>
+          
+              <!-- Toggle button -->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarButtonsExample"
+                aria-controls="navbarButtonsExample"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
+          
+              <!-- Collapsible wrapper -->
+              <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                <!-- Left links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link " href="#top"><i class="fa fa-fw fa-home"></i>Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#aboutus"><i class="fa fa-fw fa-check"></i>About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#boxseller"><i class="fa fa-fw fa-shopping-cart"></i>Buy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="ratepage.html"><i class="fa fa-fw fa-tags"></i>Service</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+                  </li>
+                </ul>
+                <!-- Left links -->
+          
+                <div class="d-flex align-items-center">
+                  <button type="button" class="btn btn-primary me-3">
+                    <a class="btn-nawa" href="register.html">Sign up</a>
+                  </button>
+                  <a
+                    class="btn btn-dark px-3"
+                    href=""
+                    role="button"
+                    ><i class="fa fa-fw fa-star"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- Collapsible wrapper -->
+            </div>
+            <!-- Container wrapper -->
+          </nav>
+
+        <!--สร้าง Slider-->
+        <section id="slider" class="border-4">
+            <div class="carousel slide" data-bs-ride="carousel" id="myslider">
+                <ol class="carousel-indicators">
+                    <button data-bs-target="#myslider" data-bs-slide-to="0" class="active"></button>
+                    <button data-bs-target="#myslider" data-bs-slide-to="1"></button>
+                    <button data-bs-target="#myslider" data-bs-slide-to="2"></button>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item carousel-image-1 active">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1>ยินดีตอนรับ</h1>
+                                <p>ยินดีต้อนรับสู่บริษัทนำเที่ยวของเรา! เรามุ่งมั่นที่จะนำทางคุณสู่ประสบการณ์ท่องเที่ยวที่ไม่เหมือนใคร ด้วยเสน่ห์และความสนุกที่ไม่มีที่สิ้นสุด ทุกทริปที่เราออกแบบไว้นั้นจะทำให้คุณตื่นเต้นไปกับประสบการณ์ใหม่ๆ ที่คุณอาจไม่เคยพบมาก่อน</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                      <img src="image/wall02.png" class="carousel-image-2">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1>เกี่ยวกับเรา</h1>
+                                <p>เรามีทริปที่หลากหลายให้คุณเลือกเที่ยวทั้งในแสนสวยภูมิภาคญี่ปุ่น ด้วยทัศนียภาพที่น่าทึ่งตา อาทิ ภูเขาไฟอัสฮาระ สวนซากุระ อิมพีเรียลพาเลซ และหากคุณต้องการประสบการณ์ที่เต็มไปด้วยวัฒนธรรมญี่ปุ่น คุณสามารถเยือนวัดโซโตะ สวนซากุระที่เปิดต้อนรับให้คุณสัมผัสความสงบและเรียนรู้เรื่องราวของประเพณีญี่ปุ่น</p>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="image/wall03.png" class="carousel-image-3">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1>สัมผัสประสบการณ์ใหม่!</h1>
+                                <p>ทางเรายังให้บริการทริปเชิงอาชีพ ที่คุณสามารถเรียนรู้ศิลปะการถ่ายรูปและศิลปะการตกแต่งรูปจากช่างภาพมืออาชีพ ทำให้คุณได้รับประสบการณ์ใหม่ๆ และเพิ่มทักษะในการถ่ายภาพในการเที่ยวสุดมันส์
+
+                                  พบกับโลกที่สวยงามและน่าตื่นเต้นของญี่ปุ่นกับบริษัทเรา และพร้อมสร้างความทรงจำที่คุณจะประทับใจตลอดชีวิต!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" data-bs-target="#myslider" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" data-bs-target="#myslider" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <div class="container" id="boxseller">
+        <section class="text-center test border border-bottom-0 border-top-0">
+        <div class="container1">
+            <div class="row">
+                <div class="col-md-4 text-center cardbox">
+                    <span></span>
+                    <div class="content">
+                    <picture>
+                        <img src="image/01.png" class="img-fluid img-thumbnail box" width="100px" height="100px">
+                      </picture>
+                    <h3>ไกด์นำเที่ยว</h3>
+                    <p>สวัสดีครับ ผมชื่อ Nawa คนหนึ่งครับ รับงานวันละ 50 เหรียญ คะแนนบริการ 4.9 ดาว ยินดีที่ได้รับเกียรติให้บริการครับ ขอบคุณครับ!
+                    </p>
+                    <div class="button_slide slide_right" data-bs-toggle="modal" data-bs-target="#staticBackdrop">BUY A TRIP </div>
+                </div>
+                </div>
+                <div class="col-md-4 text-center cardbox">
+                    <span></span>
+                    <div class="content">
+                    <picture>
+                        <img src="image/02.png" class="img-fluid img-thumbnail box" width="100px" height="100px">
+                      </picture>
+                    <h3>ช่างถ่ายภาพ</h3>
+                    <p>ฉันคือ Nawa ช่างถ่ายภาพที่ได้รับคะแนน 5.0 ดาว ค่าจ้างแค่วันละ 75 เหรียญ มีความสามารถในการเก็บภาพที่งดงามและน่าทึ่งแน่นอนครับ!
+                    </p>
+                    <div class="button_slide slide_right" data-bs-toggle="modal" data-bs-target="#staticBackdrop">BUY A TRIP </div>
+                </div>
+                </div>
+                <div class="col-md-4 text-center cardbox">
+                    <span></span>
+                    <div class="content">
+                    <picture>
+                        <img src="image/03.png" class="img-fluid img-thumbnail box" width="100px" height="100px">
+                      </picture>
+                    <h3>ตกแต่งภาพ</h3>
+                    <p>บริษัทของเรามีบริการตกแต่งภาพที่น่าสนใจ ค่าบริการเพียง 42 เหรียญเท่านั้น และเรามีช่างตกแต่งภาพที่มีคะแนนถึง 4.9 ดาว 
+                    </p>
+                    <div class="button_slide slide_right" data-bs-toggle="modal" data-bs-target="#staticBackdrop">BUY A TRIP </div>
+                </div>
+                </div>
+        </div>
+        <div class="container" id="aboutus">
+            <hr>
+            <div class="gallery float-lg-start">
+                <img src="image/Thai.png" alt="a hot air balloon">
+                <img src="image/Japan.png" alt="a sky photo of an old city">
+                <img src="image/Amarica.png" alt="a small boat"> 
+                <img src="image/Amarica (1).png" alt="a forest">
+              </div>
+            <div class="contentone text-center float-end po-01">
+                <img src="image/about (1).png" style="width: 220px; height: 170px;" class="text-center">
+                <h4>สัมผัสประสบการณ์ท่องเที่ยวที่สุดยอด!</h4>
+                <p>เว็บของเรานำเสนอทริปที่น่าตื่นเต้นและสนุกสำหรับทุกคนที่คิดถึงการผจญภัยและการผ่อนคลาย พร้อมเส้นทางท่องเที่ยวที่เหมาะสำหรับความต้องการของคุณ ค้นพบความสุขในทุกมุมโลกกับเราเดี๋ยวนี้!</p>
+                <a href="#contact" class="btn btn-outline-warning">ติดต่อเรา</a>
+                <a href="information.html" class="btn btn-outline-info" style="width: 120px;">ข้อมูลเพิ่มเติม</a>
+
+
+            </div>
+        </div>
+        </div>
+        <div class="container">
+        </div>
+        <div class="contentone text-center float-start po-02 line">
+            <p>เป็นบริษัทนำเที่ยวที่น่าสนใจที่สามารถสร้างประสบการณ์ท่องเที่ยวที่น่าตื่นเต้นและน่าจดจำในราคาคุ้มค่า ด้วยบริการทัวร์ที่ครบวงจรและคู่มือที่น่าเชื่อถือ เรามุ่งมั่นในการให้บริการที่มีคุณภาพสูงและความเป็นเอกลักษณ์เพื่อให้ลูกค้ามีความพึงพอใจสู่สุดของความสุขกับการเดินทางกับเรา ร่วมกับเราเพื่อสร้างความสำเร็จในการเดินทางและพบกับประสบการณ์ที่น่าทึ่งในทุกเส้นทาง!</p>
+        </div>
+        
+        
+        <div class="progress float-end po-03">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">Japan  70%</div>
+          </div>
+          <div class="progress float-end">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 62%;" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100">Thai  62%</div>
+          </div>
+          <div class="progress float-end">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 46%;" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100">Chaina  46%</div>
+          </div>
+    </section>
+    
+</div>
+</div>
+<div class="container">
+    <br>
+    <div class="about-text line2">
+                <h5>ประสบการณ์ท่องเที่ยวที่น่าตื่นเต้น:</h5> เรานำเสนอทริปท่องเที่ยวที่น่าตื่นเต้นและหลากหลายที่ครบครัน ทั้งการผจญภัยในธรรมชาติที่สวยงาม การเสี่ยงท้าทายในที่ทำเลเที่ยวนิยม 
+                <br>
+                <br><h5>ทีมงานคุณภาพ:</h5>ทีมงาน WonderTrips ประกอบด้วยนักเดินทางที่มีประสบการณ์ ความพยุงค์ในการให้บริการที่ดีที่สุดและมุ่งหวังให้ลูกค้าได้รับประสบการณ์การเดินทางที่ไม่เหมือนใคร
+                <br>
+                <br>ความปลอดภัยและความพอใจของลูกค้า: สำคัญที่สุดคือความปลอดภัยและความพอใจของลูกค้าเป็นอันดับแรก และเราให้ความสำคัญในการดูแลลูกค้าให้เกิดความพอใจและความสุขในทุกการเดินทาง
+                <br>
+                <br><h5>ประสบการณ์ใหม่ๆ:</h5> WonderTrips มุ่งหวังที่จะนำเสนอประสบการณ์การเดินทางที่เปลี่ยนแปลงและน่าทึ่งตลอดเวลา การเดินทางกับเราไม่เพียงเพื่อไปถึงจุดหมาย แต่ยังเป็นการค้นพบและเรียนรู้สิ่งใหม่ๆ และประสบการณ์ที่น่าประทับใจ
+                <br>
+                <br><h5>ความเหมาะสมและความคุ้มค่า:</h5> WonderTrips มีทริปท่องเที่ยวที่เหมาะสำหรับทุกคนที่มีความต้องการแตกต่างกัน จากทริปการผจญภัยสุดเสี่ยงไปจนถึงทริปพักผ่อนครอบครัว และทุกทริปที่เรานำเสนอคือความคุ้มค่าที่สุด
+                
+                เราเป็นสำรวจโลกครบครันที่จะนำทางคุณไปสู่ประสบการณ์ที่ไม่เหมือนใคร ให้ลองตื่นเต้นค้นหาโลกใหม่กับ WonderTrips วันนี้!
+        
+    </div>
+</div>
+<br>
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">ติดต่อเรา</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <labe>อีเมล</labe>
+                            <input type="e-mail" placeholder="กรุณากรอกอีเมลของคุณ" class="form-control">
+                        </div>
+                    </form>
+                    <form>
+                        <div class="form-group">
+                            <labe>หัวข้อ</labe>
+                            <input type="e-mail" placeholder="เสนอหัวข้องานของคุณ" class="form-control">
+                        </div>
+                    </form>
+                    <form>
+                        <div class="form-group">
+                            <labe>รายละเอียด</labe>
+                            <textarea id="" cols="30" rows="10" class="form-control"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                <button class="btn btn-danger" data-bs-dismiss="modal">ยกเลิก</button>
+                <button class="btn btn-outline-success">ส่งข้อมูล</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="contact" class="text-center text-white" style="background-color: #0a4275;">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: CTA -->
+          <section class="">
+            <p class="d-flex justify-content-center align-items-center">
+              <span class="me-3">ที่อยู่: 123 ถนนสุขุมวิท, เขตพระโขนง, กรุงเทพฯ 10110
+                เบอร์โทรศัพท์: 02-123-4567</span>
+                <div class="dropup">
+                    <button class="dropbtn">เพิ่มเติม</button>
+                    <div class="dropup-content">
+                    <p>ติดต่อเรา
+                        ที่อยู่: 123 ถนนสุขุมวิท, เขตพระโขนง, กรุงเทพฯ 10110
+                        เบอร์โทรศัพท์: 02-123-4567
+                        อีเมล: info@wondertrips.com
+                        เว็บไซต์: www.wondertrips.com
+                        เฟสบุ๊ค: www.facebook.com/wondertrips
+                        อินสตาแกรม: www.instagram.com/wondertrips
+                        
+                        เวลาทำการ:
+                        จันทร์ - ศุกร์: 08:00 - 17:00 น.
+                        เสาร์ - อาทิตย์: 09:00 - 14:00 น.
+                        
+                        ติดต่อเราเพื่อขอความช่วยเหลือ หรือสอบถามข้อมูลเพิ่มเติมเกี่ยวกับทริปท่องเที่ยวที่น่าสนใจของเรา ทีมงาน WonderTrips ยินดีให้ความช่วยเหลือและให้คำแนะนำเพื่อให้การเดินทางของคุณเป็นที่ทรงจำและน่าประทับใจที่สุดครับ/ค่ะ!</p>
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn-outline-info" style="width: 120px;">
+                  <a class="btn-nawa" href="ticket.html">ส่ง Ticket ที่นี้</a></button>
+            </p>
+          </section>
+          <!-- Section: CTA -->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a class="text-white" href="#">nawa2001.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </body>
+</html>
